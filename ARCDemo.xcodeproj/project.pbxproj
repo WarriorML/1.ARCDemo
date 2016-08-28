@@ -15,6 +15,8 @@
 		02CC37501D6FD74F00DBC66E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02CC374E1D6FD74F00DBC66E /* LaunchScreen.storyboard */; };
 		02CC375B1D6FD74F00DBC66E /* ARCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CC375A1D6FD74F00DBC66E /* ARCDemoTests.m */; };
 		02CC37661D6FD74F00DBC66E /* ARCDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CC37651D6FD74F00DBC66E /* ARCDemoUITests.m */; };
+		02CC37751D6FDA0500DBC66E /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CC37741D6FDA0500DBC66E /* People.m */; };
+		02CC37781D6FDACC00DBC66E /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CC37771D6FDACC00DBC66E /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		02CC37611D6FD74F00DBC66E /* ARCDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CC37651D6FD74F00DBC66E /* ARCDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCDemoUITests.m; sourceTree = "<group>"; };
 		02CC37671D6FD74F00DBC66E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02CC37731D6FDA0500DBC66E /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		02CC37741D6FDA0500DBC66E /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		02CC37761D6FDACC00DBC66E /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		02CC37771D6FDACC00DBC66E /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,10 @@
 			isa = PBXGroup;
 			children = (
 				02CC37411D6FD74F00DBC66E /* main.m */,
+				02CC37731D6FDA0500DBC66E /* People.h */,
+				02CC37741D6FDA0500DBC66E /* People.m */,
+				02CC37761D6FDACC00DBC66E /* Car.h */,
+				02CC37771D6FDACC00DBC66E /* Car.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -270,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02CC37781D6FDACC00DBC66E /* Car.m in Sources */,
+				02CC37751D6FDA0500DBC66E /* People.m in Sources */,
 				02CC37481D6FD74F00DBC66E /* ViewController.m in Sources */,
 				02CC37451D6FD74F00DBC66E /* AppDelegate.m in Sources */,
 				02CC37421D6FD74F00DBC66E /* main.m in Sources */,
