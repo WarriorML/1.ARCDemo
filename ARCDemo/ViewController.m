@@ -8,9 +8,11 @@
 
 #import "ViewController.h"
 #import "AppDelegate.h"
+
 @interface ViewController ()
 
 @end
+
 /*
  ARC是iOS 5推出的新功能，全称叫 ARC(Automatic Reference Counting)。简单地说，就是代码中自动加入了retain/release，原先需要手动添加的用来处理内存管理的引用计数的代码可以自动地由编译器完成了。该机能在 iOS 5/ Mac OS X 10.7 开始导入，利用 Xcode4.2 可以使用该机能。简单地理解ARC，就是通过指定的语法，让编译器(LLVM 3.0)在编译代码时，自动生成实例的引用计数管理部分代码。有一点，ARC并不是GC，它只是一种代码静态分析（Static Analyzer）工具。
  */
@@ -21,12 +23,13 @@
  */
 
 /*
-代码中不能使用retain, release, retain, autorelease
+代码中不能使用retain, release, autorelease
 不重载dealloc（如果是释放对象内存以外的处理，是可以重载该函数的，但是不能调用[super dealloc]）
 不能在C结构体中使用对象指针
 id与void *间的如果cast时需要用特定的方法（__bridge关键字）
 不能使用NSAutoReleasePool、而需要@autoreleasepool块
  */
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -40,8 +43,6 @@ id与void *间的如果cast时需要用特定的方法（__bridge关键字）
      - (oneway void)release OBJC_ARC_UNAVAILABLE;
      - (instancetype)autorelease OBJC_ARC_UNAVAILABLE;
      - (NSUInteger)retainCount OBJC_ARC_UNAVAILABLE;
-     
-     - (struct _NSZone *)zone OBJC_ARC_UNAVAILABLE;
      */
     
     NSString *hello = @"Hello world";

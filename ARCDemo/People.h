@@ -17,7 +17,7 @@
 @property (nonatomic,retain)NSString *name;
 @property (nonatomic,strong)NSString *name2;
 
-//编译器在编译时，会将assign替换为weak
+//编译器在编译时，会将assign替换为unsafe_unretained
 @property (nonatomic,assign)int  age;
 
 //unsafe_unretained不安全的不拥有管理权指针，一般不常用，
